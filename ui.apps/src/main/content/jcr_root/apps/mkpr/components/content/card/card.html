@@ -1,0 +1,14 @@
+<div class="container">
+    <pre data-sly-use.card="com.aem.mkpr.core.components.Card">
+       <div class="card" style="width:400px">
+            <img data-sly-test="${card.fileReference}" class="card-img-top" src="${card.fileReference}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h1>${card.fileName}</h1>
+                <h4 data-sly-test="${card.title}" class="card-title">${card.title}</h4>
+                <p data-sly-test="${card.text}" class="card-text">${card.text}</p>
+                <!--/*<a href="#" class="btn btn-primary">See Profile</a>*/-->
+            </div>
+        </div>
+    </pre>
+    <br>
+</div>
