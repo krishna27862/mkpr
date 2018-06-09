@@ -5,7 +5,6 @@ import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
 @Model(adaptables=Resource.class)
 
@@ -16,11 +15,11 @@ public class Card {
     @Inject @Default(values = "Enter Paragraph")
     private String text;
     @Inject @Default(values = "/content/dam/mkpr/asset.jpg")
-    private String fileReference;
+    private String file;
 
     public String getFileReference() {
 
-        return fileReference;
+        return file;
     }
 
     public String getTitle() {

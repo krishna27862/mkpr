@@ -22,6 +22,7 @@
                                 autoStart="{Boolean}false"
                                 class="cq-droptarget"
                                 fileNameParameter="./fileName"
+                                fileReferenceParameter="./file"
                                 mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff]"
                                 multiple="{Boolean}false"
                                 name="./fileReference"
@@ -38,7 +39,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                 fieldLabel="Title"
-                                name="./tilenode/title"/>
+                                name="./title"/>
                             <text
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
