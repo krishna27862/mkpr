@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-06-07T16:51:18.030+05:30"
+        cq:lastModified="{Date}2018-06-11T11:27:34.839+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/mkpr/settings/wcm/templates/landingpage"
         jcr:primaryType="cq:PageContent"
@@ -14,22 +14,6 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <text_copy jcr:primaryType="nt:unstructured"/>
-            <text
-                jcr:created="{Date}2018-06-07T16:51:12.237+05:30"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-06-07T16:51:18.028+05:30"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="mkpr/components/content/text"
-                text="&lt;p>xsxxsxsxs&lt;/p>&#xa;"
-                textIsRich="true"/>
-            <header
-                jcr:created="{Date}2018-06-07T15:57:27.807+05:30"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2018-06-07T15:57:27.807+05:30"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="mkpr/components/structure/header"/>
         </root>
     </jcr:content>
 </jcr:root>

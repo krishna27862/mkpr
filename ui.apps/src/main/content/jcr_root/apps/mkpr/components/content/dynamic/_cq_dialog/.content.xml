@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    class="dynamicdialog"
+    extraClientlibs="[mkpr.dynamic]"
+    mode="edit">
+    <content
+        granite:class="dialogcoloumn"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                granite:class="dropdowncontainer"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <backgroundstyle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        class="dynamicstyle"
+                        fieldLabel="Background Style"
+                        name="./backgroundstyle"
+                        target="[myvalue, krishna]"
+                        granite:class="dynamicstyle">
+                        <items jcr:primaryType="nt:unstructured">
+                            <empty
+                                jcr:primaryType="nt:unstructured"
+                                text="Select"
+                                value="empty"/>
+                            <backgroundimage
+                                jcr:primaryType="nt:unstructured"
+                                text="Background Image"
+                                value="image"/>
+                            <backgroundcolor
+                                jcr:primaryType="nt:unstructured"
+                                text="Background Color"
+                                value="color"/>
+                        </items>
+                    </backgroundstyle>
+                    <bgimage
+                        granite:class="backgroundimage"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                autoStart="{Boolean}false"
+                                class="image cq-droptarget"
+                                mimeTypes="[image/png,image/jpeg]"
+                                multiple="{Boolean}false"
+                                name="./bgimage"
+                                text="Upload Image"
+                                uploadUrl="${suffix.path}"/>
+                        </items>
+                    </bgimage>
+                    <bgcolor
+                        granite:class="backgroundcolor"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Color"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <backgroundColor
+                                granite:class="backgroundcolor"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                class="color"
+                                fieldLabel="Background Color"
+                                name="./bgcolor"
+                                showDefaultColors="{Boolean}false"
+                                showProperties="{Boolean}true"
+                                text="Background Color"/>
+                        </items>
+                    </bgcolor>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
