@@ -12,8 +12,8 @@
                 sling:resourceType="granite/ui/components/coral/foundation/tabs">
                 <items jcr:primaryType="nt:unstructured">
                     <cardimage
-                        jcr:title="Upload Image"
                         jcr:primaryType="nt:unstructured"
+                        jcr:title="Upload Image"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <file
@@ -31,8 +31,8 @@
                         </items>
                     </cardimage>
                     <cardcontent
-                        jcr:title="Edit Content"
                         jcr:primaryType="nt:unstructured"
+                        jcr:title="Edit Content"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <title

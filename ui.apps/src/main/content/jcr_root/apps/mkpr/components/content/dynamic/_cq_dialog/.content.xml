@@ -17,13 +17,13 @@
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
                     <backgroundstyle
+                        granite:class="dynamicstyle"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
                         class="dynamicstyle"
                         fieldLabel="Background Style"
                         name="./backgroundstyle"
-                        target="[myvalue, krishna]"
-                        granite:class="dynamicstyle">
+                        target="[myvalue, krishna]">
                         <items jcr:primaryType="nt:unstructured">
                             <empty
                                 jcr:primaryType="nt:unstructured"
