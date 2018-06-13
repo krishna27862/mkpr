@@ -1,4 +1,5 @@
-<div data-sly-test="${properties.backgroundstyle == 'image'} ">
+<div datanodeid=${currentNode.identifier}>
+<div id="image" data-sly-test="${properties.backgroundstyle == 'image'} ">
 <div class="container">
 
        <div class="card" style="width:400px; background-image:url(${properties.fileReference@ context='styleString'}); background-repeat:no-repeat; background-size: cover;">
@@ -15,7 +16,7 @@
 
 
 </div>
-<div data-sly-test="${properties.backgroundstyle == 'color'} ">
+<div id="color" data-sly-test="${properties.backgroundstyle == 'color'} ">
 	<div class="container">
 
        <div class="card" style="width:400px; background-color:${properties.bgcolor@ context='styleToken'}; ">
@@ -29,9 +30,10 @@
     <br>
 </div>
 </div>
-<div data-sly-test="${properties.backgroundstyle == 'empty'} ">
+<div id="empty" data-sly-test="${properties.backgroundstyle == 'empty'} ">
 
 <h1>
     Please configure component
 </h1>
+</div>
 </div>

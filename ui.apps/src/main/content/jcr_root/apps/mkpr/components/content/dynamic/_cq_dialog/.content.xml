@@ -40,7 +40,7 @@
                         </items>
                     </backgroundstyle>
                     <bgimage
-                        granite:class="backgroundimage"
+                        granite:class="backgroundimage "
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Image"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
